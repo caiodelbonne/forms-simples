@@ -23,7 +23,43 @@
                     <span>Voltar</span>
                 </div>
                 <h1>Formulário de matrícula</h1>
-                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+                </p>
+
+                <form enctype="multipart/form-data" method="post" action="">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome Completo</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Nome Completo da crianca">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="birth">Data de nascimento</label>
+                            <input type="date" id="birth" lang="pt-BR" name="birth">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="female">Femino</option>
+                                <option value="male">Masculino</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informacoes Medicas</label>
+                            <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="possui alguma restricao"></textarea>
+                        </div>
+
+                        <div class="droparea-wrapper">
+                            <input type="file" id="birth-file" name="birth-file">
+                            <img src="Icons/cloud-upload.svg" alt="">
+                            <p>Clique aqui para selecionar arquivos</p>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </main>
 
@@ -32,7 +68,8 @@
                 <header>
                     <img src="img/logo.svg" alt="Estrela do amanha">
                     <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
-                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                    <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e
+                        estimulante.</p>
                 </header>
                 <img src="img/Illustration.svg" alt="ilustracao de uma prof dando aula">
             </div>
